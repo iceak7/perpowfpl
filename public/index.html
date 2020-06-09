@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8b0424c581.js" crossorigin="anonymous"></script>
+
+    <title>FPL Center</title>
+</head>
+
+<body>
+    <div class="sideMenuBox" id="sideMenuBox">
+        <div class="sideMenu" id="sideMenu">
+            <div id="homeLink" class='menuIcon'><i class="fas fa-home"></i></div>
+            <div id="statsLink" class='menuIcon'><i class="fas fa-chart-bar"></i></div>
+        </div>
+        <div class="menuButton" id="menuButton"><i id='menuIcon' class="fas fa-arrow-right"></i></div>
+    </div>
+    <div id="liveButton" class="hidden">
+        <div id='gwLive'><span id="liveCircle">🔴</span><span id="gwMobile" class='hidden'>GW</span><span id="gwNr">GW24</span></div>
+        <div id='gwLiveArrow'><i id='liveArrow' class="fas fa-arrow-right"></i></div>
+    </div>
+    <h1>PERPOW FPL CENTER <span><i class="fas fa-futbol"></i></span></h1>
+    <table id="scoreboard">
+        <tr id="firstRow">
+            <th class="cell1">Rank</th>
+            <th class="cell2">Name</th>
+            <th class="cell3">Overall Rank</th>
+            <th class="cell4" id="currentGW">Current GW</th>
+            <th class="cell5">Total Points</th>
+            <th class="cell6"></th>
+        </tr>
+    </table>
+    <div id="loader" class="loader"></div>
+    <div id="stats" class="hidden">
+        <div class="statsHeader">
+            <h2>Statistics</h2>
+        </div>
+        <div id="statsBox">
+            <div class="statRow" id="statRow1">
+                <div class="stats" id="mostOwnedPlayer">
+                    <div class='mostOwnedHeader'>
+                        <h2>Top 10 Most Owned</h2>
+                    </div>
+                    <div class="mostOwnedExp">
+                        <div title="Selected By Nr" class='statOwnedBy tooltip'>SB</div>
+                        <div title="Selected Player" class='statPlayerName tooltip'>Player</div>
+                        <div title="Globally Selected By"class='statGloballyOwnedBy tooltip'>GSB</div>
+                        <div title="Total points" class='statTotalPoints tooltip'>TP</div> 
+                        <div title="Latest GW Points" class='statGWPoints tooltip'>GWP</div> 
+                    </div>  
+                </div>
+            </div>
+            <div class="statRow" id="statRow2">
+                <div class="stats" id="leastOwned">
+                    <div class='mostOwnedHeader'>
+                        <h2>Top 10 Players Not Owned</h2>
+                    </div>
+                     <div class="mostOwnedExp">
+                        <div title="Total Points" class='statTotalPoints tooltip'>TP</div>
+                        <div title="Selected Player" class='statPlayerName tooltip'>Player</div>
+                        <div title="Globally Selected By" class='statGloballyOwnedBy tooltip'>GSB</div>
+                        <div title="Cost" class='statCost tooltip'>£</div>
+                        <div title="Latest GW Points" class='statGWPoints tooltip'>GWP</div>
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id='liveGw' class='hidden'></div>
+    <script src="script.js"></script>
+</body>
+
+</html>

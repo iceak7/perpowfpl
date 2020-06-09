@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .row{
+            display:flex;
+            width:100%;
+            background:greenyellow;
+        }
+        .cell{
+            padding:1%;
+            background: #ddd;
+            flex: 100px 1
+        }
+        .moreContent{
+            width:100%;
+            border:1px solid pink;
+            height:30vh;
+            background: #505050;;
+        }
+        .hidden{
+            display:none;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="row" onclick = "mc()">
+        <div class="cell">as</div>
+        <div class="cell">45354335</div>
+        <div class="cell">bbdasdfasdfasfd </div>
+        <div class="cell">ddddjh,ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg</div>
+        <div class="cell">sdfsdfsadfsddddddddddddddddddddddddddddddd</div>
+
+    </div>
+    <div class="moreContent hidden">
+
+
+    </div>
+
+
+<script>
+    function mc(){
+        document.querySelector(".moreContent").classList.toggle("hidden");
+
+    }
+
+
+</script>
+</body>
+</html>
