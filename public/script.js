@@ -1,4 +1,4 @@
-let playerIds = [3038538, 2596488, 2596439, 4283112, 4244501, 5053244, 89041];
+let playerIds = [888058, 3526, 77590, 2167555, 1080220];
 let playerDataArr=[];
 let static;
 let currentGW;
